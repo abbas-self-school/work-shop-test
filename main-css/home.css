@@ -1,0 +1,1238 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* basic color #FAA613 */
+
+body {
+    font-family: sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 1170px;
+    margin: auto;
+}
+/* end clearfix class */
+
+
+/* start container of top header */
+.container .sup-head {
+    display: flex;
+    border: 1px solid rgb(190, 190, 190);
+    height: 40px;
+}
+/* end container of top header */
+
+/* start mail and phone */
+.sup-head .mail,
+.sup-head .phone {
+    float: right;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.sup-head .mail i,
+.sup-head .phone i {
+    color: #FAA613;
+    cursor: pointer;
+}
+
+.sup-head .mail span,
+.sup-head .phone span {
+    font-size: 12px;
+}
+/* start phone */
+
+/* start currency */
+.sup-head .currency {
+    margin: 10px 0 10px;
+    margin-right: 380px;
+    float: left;
+    cursor: pointer;
+}
+
+.sup-head .currency div bdi {
+    position: relative;
+}
+
+.sup-head .currency .bolding {
+    color: #FAA613;
+    font-weight: bold;
+}
+
+.sup-head .currency div bdi .arrowing:after {
+    content: "";
+    position: absolute;
+    right: 90px;
+    top: 80%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color:  rgb(61, 61, 61) transparent transparent transparent ;
+}
+/* end currency */
+
+
+/* start transfer */
+.sup-head .transfer {
+    float: left;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.sup-head .transfer div bdi {
+    position: relative;
+}
+
+.sup-head .transfer .bolding {
+    color: #FAA613;
+    font-weight: bold;
+}
+
+.sup-head .transfer div bdi .arrowing:after {
+    content: "";
+    position: absolute;
+    right: 98px;
+    top: 80%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color:  rgb(61, 61, 61) transparent transparent transparent ;
+}
+/* end transfer */
+
+/* start media */
+.sup-head .media {
+    float: left;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.sup-head .media i {
+    margin: 0 5px;
+}
+/* end media */
+
+/* start lang option */
+.sup-head .lang {
+    float: left;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.sup-head .lang i {
+    margin: 0 5px;
+}
+/* end lang option */
+
+/* start logo */
+.container .sub-head {
+    display: flex;
+}
+.sub-head .logo {
+    width: 33%;
+    float: right;
+}
+
+.sub-head .logo img {
+    margin: 0 20px;
+}
+
+/* end logo */
+
+/* start search area */
+
+.sub-head .searching {
+    position: relative;
+    width: 33%;
+    height: 40px;
+    top: 60px;
+    float: right;
+    margin: 10px 20px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 30px;
+}
+
+.sub-head .searching .classification {
+    position: relative;
+    color: #FAA613;
+    top: 14px;
+    right: 20px;
+}
+
+
+
+.sub-head .searching .classification bdi span:after {
+    content: "";
+    position: absolute;
+    right: 73px;
+    top: 70%;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color:  #FAA613  transparent transparent transparent ;
+}
+
+.sub-head .searching .input-field input {
+    position: absolute;
+    background-color: transparent;
+    width: 170px;
+    height: 35px;
+    right: 110px;
+    padding-right: 20px;
+    border: none;
+    outline: none;
+    margin: 3px 10px;
+    top: 0;
+    z-index: 3;
+}
+
+.sub-head .searching .input-field .overlay-input {
+    position: absolute;
+    right: 130px;
+    width: 100%;
+    margin: 3px 10px;
+    top: 10px;
+    font-size: 18px;
+    color: rgb(190, 190, 190);
+}
+
+.sub-head .searching i {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    color: rgb(190, 190, 190);
+}
+
+/* end search area */
+
+/* start buy options */
+.buy-options {
+    width: 33%;
+    position: relative;
+    top: 70px;
+    float: left;
+}
+
+.buy-options img {
+    position: absolute;
+    float: right;
+    right: 25px;
+    cursor: pointer;
+}
+
+.buy-options .basket-title {
+    position: absolute;
+    float: right;
+    right: 70px;
+    top: 10px;
+}
+
+.buy-options .basket-value {
+    position: absolute;
+    float: right;
+    color: #FAA613;
+    top: 25px;
+    right: 65px;
+    font-size: 12px;
+}
+
+.buy-options .accounts {
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 200px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buy-options .accounts .arrow:after {
+    content: "";
+    position: absolute;
+    right: 37px;
+    top: 72%;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color:  black  transparent transparent transparent ;
+}
+
+.buy-options i {
+    position: absolute;
+    float: right;
+    font-size: 30px;
+    top: 5px;
+    right: 300px;
+}
+
+/* end buy options */
+
+/* start navbar */
+.container .nav-bar {
+    overflow: hidden;
+    background-color: #FAA613;
+    width: 100%;
+    height: auto;
+}
+
+.nav-bar .link {
+    padding: 14px 16px;
+    float: right;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-bar .link:not(:last-child) {
+    margin-right: 40px;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.nav-bar .link:hover,
+.nav-bar .dropbtn:hover {
+    background-color: white;
+    color: #FAA613;
+}
+
+.dropdown .dropcont {
+    display: none;
+    position: absolute;
+    top: 47px;
+    right: 5px;
+    border: rgb(207, 206, 206);
+    outline: none;
+    color: white;
+    font-size: 16px;
+    background-color: #FAA613;
+    box-shadow: 3px 2px 15px #FAA613;
+    z-index: 25;
+}
+.dropcont .link {
+    display: block;
+    float: none;
+    color: white;
+    background-color: #FAA613;
+    padding: 8px 12px;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 160px;
+}
+
+.dropcont.show {
+    display: block;
+}
+/* end navbar */
+
+/* start slider img */
+
+.container .slider-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
+}
+
+.slider-cont img {
+    position: absolute;
+    width: 100%;
+}
+
+.slider-cont .navi {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 560px;
+}
+
+.navi span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FAA613;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navi span.active {
+    background-color: #FAA613;
+}
+
+.slider-cont button {
+    position: absolute;
+    background-color: #FAA613;
+    color: #fff;
+    width: 225px;
+    height: 50px;
+    border-radius: 5px;
+    top: 365px;
+    outline: none;
+    border: none;
+    right: 470px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* end slider img */
+
+/* start category img */
+
+.container .category-cont {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-cont img[alt="omani"] {
+    position: absolute;
+    width: 33%;
+    top: 550px;
+    margin-left: 0.5%;
+    margin-top: 1%;
+}
+
+.category-cont img[alt="others"] {
+    position: absolute;
+    width: 33%;
+    top: 753px;
+    margin-left: 0.5%;
+    margin-top: 1%;
+}
+
+.category-cont img[alt="perfum"] {
+    position: absolute;
+    width: 33%;
+    top: 550px;
+    right: 400px;
+    margin-left: 0.5%;
+    margin-top: 1%;
+}
+
+.category-cont img[alt="watches"] {
+    position: absolute;
+    width: 32%;
+    top: 550px;
+    right: 800px;
+    margin-top: 1%;
+}
+
+.category-cont img[alt="jewelery"] {
+    position: absolute;
+    width: 32%;
+    top: 755px;
+    right: 800px;
+    margin-top: 1%;
+}
+
+/* end category img */
+
+/* start services img */
+
+.container .services-cont {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 110px;
+}
+
+.services-cont h4 {
+    position: absolute;
+    width: 98%;
+    top: 950px;
+    right: -70px;
+    margin-top: 1%;
+}
+
+.services-cont .house {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.services-cont .maintenance {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    right: 16%;
+    top: 980px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.services-cont .sebaka {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 32%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.services-cont .garden {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 48%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.services-cont .general {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 64%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.services-cont .other {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 80%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+/* end services img */
+
+/* start products */
+
+.container .products {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    top: 1100px;
+}
+
+.container .products h4 {
+    position: relative;
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+.container .products .perfum {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 70px;
+}
+
+.container .products .perfum .item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    margin-right: 20px;
+    top: 20px;
+}
+
+.container .products .perfum .item h5 {
+    text-align: center;
+}
+
+.container .products .perfum .item div {
+    position: absolute;
+    top: 140px;
+    right: 50px;
+    color: #FAA613;
+}
+
+.container .products .perfum .item div i {
+    color: rgb(168, 168, 168);
+}
+
+.container .products .perfum .item img:first-of-type {
+    position: absolute;
+    top: 22px;
+    right: 45px;
+}
+
+.container .products .watches {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 250px;
+}
+
+.container .products .watches .item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    margin-right: 20px;
+    top: 20px;
+}
+
+.container .products .watches .item h5 {
+    text-align: center;
+}
+
+.container .products .watches .item div {
+    position: absolute;
+    top: 140px;
+    right: 50px;
+    color: #FAA613;
+}
+
+.container .products .watches .item div i {
+    color: rgb(168, 168, 168);
+}
+
+.container .products button {
+    background-color: #FAA613;
+    position: relative;
+    color: white;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    top: 300px;
+    right: 500px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* start products */
+
+/* start background */
+
+.container .background-part {
+    position: relative;
+    top: 1100px;
+}
+
+.background-part  img{
+    width: 100%;
+}
+
+/* end background */
+
+/* start our news */
+
+.container .our-news {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    top: 1150px;
+}
+
+.container .our-news .new-arrival {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 10px;
+}
+
+.container .our-news .new-arrival h3 {
+    display: inline-block;
+    width: 10%;
+    margin: 5px;
+    top: 3px;
+    position: relative;
+}
+
+.container .our-news .new-arrival hr {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    top: -2px;
+}
+
+.container .our-news .new-arrival i {
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+    color: #FFA613;
+    margin-right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.container .our-news .perfum {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 70px;
+}
+
+.container .our-news .perfum .item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    margin-right: 20px;
+    top: 20px;
+}
+
+.container .our-news .perfum .item img {
+    box-shadow: 3px 3px 10px grey;
+}
+
+.container .our-news .watches {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 300px;
+}
+
+.container .our-news .watches .item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    margin-right: 20px;
+    top: 20px;
+}
+
+.container .our-news .watches .item img {
+    box-shadow: 3px 3px 10px grey;
+    cursor: pointer;
+}
+
+.container .our-news .perfum .item img:first-of-type {
+    position: absolute;
+    top: 22px;
+    right: 45px;
+}
+
+.container .our-news .watches .item img:first-of-type {
+    position: absolute;
+    top: 22px;
+    right: 45px;
+}
+
+/* end our news */
+
+/* start category two omani clothes */
+
+.container .category-two {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 1150px;
+    margin-top: 50px;
+}
+
+.container .category-two .col1 {
+    position: relative;
+    width: 50%;
+}
+
+.container .category-two .col2  {
+    position: relative;
+    width: 50%;
+}
+
+.container .category-two .col1 img {
+    position: relative;
+    width: 98%;
+    height: 48%;
+    margin: 1%;
+}
+
+.container .category-two .col1 img:last-child {
+    top: -2%;
+}
+
+.container .category-two .col2 img {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+}
+
+.container .category-two .col2 .overlay {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    color: white;
+    font-size: 30px;
+}
+
+.container .category-two .col2 .overlay bdi:first-child {
+    position: absolute;
+    right: 37%;
+}
+/* end category two */
+
+/* start background */
+
+.container .background-two {
+    position: relative;
+    top: 1200px;
+    height: 50px;
+}
+
+.background-two  img{
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+}
+
+/* end background */
+
+/* start shopping */
+
+.container .shopping {
+    position: relative;
+    display: flex;
+    top: 370px;
+    right: 70px;
+}
+
+.shopping h4 {
+    position: absolute;
+    width: 98%;
+    top: 950px;
+    right: -70px;
+    margin-top: 1%;
+}
+
+.shopping .house {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.shopping .maintenance {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    right: 16%;
+    top: 980px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.shopping .sebaka {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 32%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.shopping .garden {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 48%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.shopping .general {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 64%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.shopping .other {
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 980px;
+    right: 80%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.shopping p {
+    text-align: center;
+}
+
+.shopping img {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* end shopping */
+
+/* start shop img */
+
+.container .shop-img {
+    position: relative;
+    display: flex;
+    top: 1530px;
+    height: 650px;
+}
+
+.shop-img .row1{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+
+.shop-img .row2 {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 320px;
+}
+
+.row1 img {
+    position: absolute;
+    width: 48%;
+    margin: 0% 1% 3%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.row1 img:last-child {
+    position: absolute;
+    right: 50%;
+}
+
+.row2 img {
+    position: absolute;
+    width: 98%;
+    margin: 0% 1% 0%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* end shop img */
+
+/* start last article */
+
+.container .last-article {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 1530px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.container .last-article .new-arrival {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 10px;
+}
+
+.container .last-article .new-arrival h3 {
+    display: inline-block;
+    width: 10%;
+    margin: 5px;
+    top: 3px;
+    position: relative;
+}
+
+.container .last-article .new-arrival hr {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    top: -2px;
+    color: rgb(211, 211, 211);
+}
+
+.container .last-article .new-arrival i {
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+    color: #FFA613;
+    margin-right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.container .last-article .perfum {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 70px;
+}
+
+.container .last-article .perfum .item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    margin-right: 20px;
+    top: 20px;
+}
+
+.container .last-article .perfum .item img {
+    box-shadow: 3px 3px 10px grey;
+}
+
+.container .last-article .perfum .item p {
+    width: 90px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+/* end last article */
+
+/* start phone app */
+
+.phone-app {
+    background-color: #FAA613;
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 1850px;
+    height: 500px;
+}
+
+.phone-app .logo {
+    background-color: white;
+    position: relative;
+    top: -80px;
+    right: 45%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.phone-app .logo img {
+    position: relative;
+    margin-right: 22px;
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.phone-app .head-text {
+    color: white;
+    position: relative;
+    top: 100px;
+    right: 25%;
+    width: 320px;
+}
+
+.phone-app .head-text h2 {
+    margin-bottom: 10px;
+}
+
+.phone-app .apple-android {
+    position: relative;
+    top: 200px;
+    right: -7%;
+    width: 420px;
+    height: 80px;
+}
+
+.phone-app .apple-android img {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+}
+
+.phone-app .apple-android img:last-child {
+    position: absolute;
+    margin: 0% 10% 0% 0%;
+    right: 50%;
+}
+
+.phone-app .flat-phone {
+    position: absolute;
+    top: 300px;
+    width: 420px;
+    height: 250px;
+    right: 25%;
+}
+/* end phone app */
+
+/* start mail part */
+
+.email {
+    background-color: #FAA613;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    top: 1900px;
+}
+
+.email h3 {
+    position: absolute;
+    width: 60%;
+    color: white;
+    margin: 30px;
+    right: 10%;
+}
+
+.email .mail-input {
+    position: relative;
+    width: 27%;
+    background-color: white;
+    margin: 30px;
+    right: 50%;
+    padding: 10px;
+    left: 30px;
+    height: 20px;
+    bottom: 8px;
+}
+
+.email .mail-input input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    z-index: 10;
+    background-color: transparent;
+    bottom: 4px;
+}
+
+.email .mail-input .placeholder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    color: rgb(194, 191, 191);
+}
+
+.email .mail-input button {
+    position: absolute;
+    width: 100px;
+    height: 80%;
+    z-index: 5;
+    background-color: #FAA613;
+    color: white;
+    right: 60%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    bottom: 4px;
+    cursor: pointer;
+    z-index: 15;
+}
+
+/* end mail part */
+
+/* start footer */
+
+.container .footer {
+    background-color: #4b4b4b;
+    position: relative;
+    display: block;
+    top: 1900px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footer .row1 {
+    display: flex;
+    position: relative;
+}
+
+.footer .row2 {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+}
+
+.row1 .col {
+    width: 16.6%;
+    margin-right: 0.3%;
+    height: 90%;
+    position: absolute;
+    line-height: 1.7;
+}
+
+.logo img {
+    width: 150px;
+    height: 200px;
+    margin-right: -50px;
+    margin-top: 20px;
+}
+
+.row1 .info {
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    right: 20%;
+}
+
+.row1 h3 {
+    margin-top: 20px;
+    color: #FAA613
+}
+
+.row1 .services {
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    right: 20%;
+}
+
+.row1 .product {
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    right: 20%;
+}
+
+.row1 .pays {
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    right: 20%;
+}
+
+.row1 .media {
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    right: 20%;
+}
+
+.row2 hr {
+    display: block;
+    width: 20%;
+    border-color: #FAA613;
+    position: relative;
+    top: 75px;
+}
+
+.row2 .rights {
+    display: block;
+    width: 20%;
+    color: white;
+    position: relative;
+    top: 85px;
+    right: -220px;
+}
+
+/* end footer */
